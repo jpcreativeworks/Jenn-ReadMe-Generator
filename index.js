@@ -49,7 +49,14 @@ function init() {
             type: 'input',
             massage: 'What is your usage?',
             name: 'usage',
-        }
+        },
+        {
+            type:'checkbox',
+            message: 'What needs to be installed?',
+            choices: ["Node.js", "Inquirer.js", "Markdown Preview Enhanced in VSC"],
+            name: 'installation',
+        },
+
     ]).then(function (response) {
         console.log(response);
         const filefinish = `
@@ -86,11 +93,15 @@ ${response.usage}
 ${response.email}
 
 ##### Username
-![Github Profile](https://github.com/${response.username}
+[Github Profile](https://github.com/${response.username})
 
 ###### Questions?
 Please reach out with any questions or possible improvments at jp.graphics.011@gmail.com. Thank you!
-        `    })
+        `  
+        fs.writeFile("README.md", filefinish, (err) => {
+            err ? console.log(err) : console.log('Success!');
+        })
+    })
 
 
 }
