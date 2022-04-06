@@ -12,7 +12,7 @@ function init() {
         {
             type: 'input',
             massage: 'What is a short discription of your Project?',
-            name: 'discription',
+            name: 'description',
         },
         {
             type: 'list',
@@ -52,8 +52,45 @@ function init() {
         }
     ]).then(function (response) {
         console.log(response);
+        const filefinish = `
+# Title : ${response.title}
 
-    })
+## Description:
+${response.description}
+
+### Table Of Contents
+* [Installation](#installation)
+* [Controbuters](#controbuters)
+* [Requirements](#requirements)
+* [Email](#email)
+* [Usage](#usage)
+* [Username](#username)
+* [License](#license)
+
+#### Installation:
+${response.installation}
+
+#### Controbuters
+${response.controbuters}
+
+#### Requirements
+${response.requirements}
+
+#### License
+![Badge](https://img.shields.io/badge/license-${response.license}-green.svg)
+
+#### Usage
+${response.usage}
+
+##### Email
+${response.email}
+
+##### Username
+![Github Profile](https://github.com/${response.username}
+
+###### Questions?
+Please reach out with any questions or possible improvments at jp.graphics.011@gmail.com. Thank you!
+        `    })
 
 
 }
