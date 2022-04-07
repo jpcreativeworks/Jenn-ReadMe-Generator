@@ -6,55 +6,57 @@ function init() {
     inquirer.prompt([
         {
             type: 'input',
-            massage: 'What is the title of your Project?',
             name: 'title',
+            message: 'What is the title of your Project?',            
         },
         {
             type: 'input',
-            massage: 'What is a short discription of your Project?',
             name: 'description',
+            message: 'What is a short discription of your Project?',            
         },
         {
             type: 'list',
-            massage: 'ask for license',
-            choices: ["MIT", "ISC", "APACHE 2.0", "GPL"],
             name: 'license',
+            message: 'Please choose a license',
+            choices: ["MIT", "ISC", "APACHE 2.0", "GPL"],
+            
         },
         {
             type: 'input',
-            massage: 'What is your gitHub username?',
             name: 'username',
+            message: 'What is your gitHub username?',            
         },
         {
             type: 'input',
-            massage: 'What is your Installation instructions?',
             name: 'instructions',
+            message: 'What is your Installation instructions?',            
         },
         {
             type: 'input',
-            massage: 'What are you testing requirements?',
             name: 'requirements',
+            message: 'What are you testing requirements?',            
         },
         {
             type: 'input',
-            massage: 'What is your email?',
             name: 'email',
+            message: 'What is your email?',            
         },
         {
             type: 'input',
-            massage: 'What is your controbuters?',
-            name: 'controbuters',
+            name: 'contributers',
+            message: 'Who were your contributers?',            
         },
         {
             type: 'input',
-            massage: 'What is your usage?',
             name: 'usage',
+            message: 'What is your usage?',            
         },
         {
             type:'checkbox',
-            message: 'What needs to be installed?',
-            choices: ["Node.js", "Inquirer.js", "Markdown Preview Enhanced in VSC"],
             name: 'installation',
+            message: 'What needs to be installed?',
+            choices: ["Node.js", "Inquirer.js", "Markdown Preview VSC Extension", "Visual Studio Code"],
+            
         },
 
     ]).then(function (response) {
@@ -67,7 +69,7 @@ ${response.description}
 
 ### Table Of Contents
 * [Installation](#installation)
-* [Controbuters](#controbuters)
+* [Contributers](#contributers)
 * [Requirements](#requirements)
 * [Email](#email)
 * [Usage](#usage)
@@ -77,8 +79,8 @@ ${response.description}
 #### Installation:
 ${response.installation}
 
-#### Controbuters
-${response.controbuters}
+#### Contributers
+${response.contributers}
 
 #### Requirements
 ${response.requirements}

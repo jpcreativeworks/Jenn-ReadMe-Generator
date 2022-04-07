@@ -1,12 +1,12 @@
 
-# Title : forthtry
+# Title : ReadMe 123 Generator
 
 ## Description:
-making a readme with the installation info also attached
+a node js file that prompts you with the questions neessary to complete a ReadMe file quickly and easily!
 
 ### Table Of Contents
 * [Installation](#installation)
-* [Controbuters](#controbuters)
+* [Contributers](#contributers)
 * [Requirements](#requirements)
 * [Email](#email)
 * [Usage](#usage)
@@ -14,13 +14,13 @@ making a readme with the installation info also attached
 * [License](#license)
 
 #### Installation:
-Node.js,Inquirer.js,Markdown Preview Enhanced in VSC
+Node.js,Inquirer.js,Markdown Preview VSC Extension,Visual Studio Code
 
-#### Controbuters
-img.sheilds.io
+#### Contributers
+img.sheild.io/badge
 
 #### Requirements
-need node js inquirer and a lil help from my friends
+none
 
 #### License
 ![Badge](https://img.shields.io/badge/license-MIT-green.svg)
@@ -29,10 +29,10 @@ need node js inquirer and a lil help from my friends
 free
 
 ##### Email
-octocat4@gmail.com
+jp.graphics.011@gmail.com
 
 ##### Username
-[Github Profile](https://github.com/octocat4)
+[Github Profile](https://github.com/jpcreativeworks)
 
 ###### Questions?
 Please reach out with any questions or possible improvments at jp.graphics.011@gmail.com. Thank you!
