@@ -70,6 +70,7 @@ ${response.description}
 ### Table Of Contents
 * [Installation](#installation)
 * [Contributers](#contributers)
+* [Instructions](#instructions)
 * [Requirements](#requirements)
 * [Email](#email)
 * [Usage](#usage)
@@ -81,6 +82,9 @@ ${response.installation}
 
 #### Contributers
 ${response.contributers}
+
+#### Instructions
+${response.instructions}
 
 #### Requirements
 ${response.requirements}

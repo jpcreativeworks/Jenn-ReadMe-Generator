@@ -1,12 +1,13 @@
 
-# Title : ReadMe 123 Generator
+# Title : ReadMe Generator
 
 ## Description:
-a node js file that prompts you with the questions neessary to complete a ReadMe file quickly and easily!
+This a system that allows you to answer a few questions and then it will generate a readme document for you to copy and paste from. 
 
 ### Table Of Contents
 * [Installation](#installation)
 * [Contributers](#contributers)
+* [Instructions](#instructions)
 * [Requirements](#requirements)
 * [Email](#email)
 * [Usage](#usage)
@@ -14,10 +15,13 @@ a node js file that prompts you with the questions neessary to complete a ReadMe
 * [License](#license)
 
 #### Installation:
-Node.js,Inquirer.js,Markdown Preview VSC Extension,Visual Studio Code
+Inquirer.js,Visual Studio Code
 
 #### Contributers
-img.sheild.io/badge
+VSC
+
+#### Instructions
+run npm install and then run node index.js
 
 #### Requirements
 none
